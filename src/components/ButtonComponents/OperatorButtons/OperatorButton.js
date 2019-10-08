@@ -9,4 +9,4 @@ const OperatorButton = daProps => {
   );
 };
 
-export default OperatorButton
+export default OperatorButton;

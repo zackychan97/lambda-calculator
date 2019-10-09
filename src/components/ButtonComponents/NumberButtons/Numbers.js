@@ -11,15 +11,15 @@ import { numbers } from '../../../data'
 
 const Numbers = daProps => {
   // STEP 2 - add the imported data to state
- const[numberButtons, setnumberButtons] = useState(numbers);
+ const[numberButtons] = useState(numbers);
  
   return (
-    <div>
+    <div className ='numbersButton'>
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
-    {numberButtons.map((button, index) => (
-      <NumberButton key ={index} button = {button} />
+    {numberButtons.map((numbers, index) => (
+      <NumberButton key ={index} numbers = {numbers} />
     ))}
     </div>
   );
